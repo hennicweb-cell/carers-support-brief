@@ -87,6 +87,18 @@
   .toc-verdict.tone-green{background:var(--green-bg);color:#1E5B3F;}
   .toc-verdict.tone-amber{background:var(--amber-bg);color:#7A551A;}
 
+  /* ---------- pipeline stats + schedule ---------- */
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0 6px;}
+  @media (max-width:760px){.stats-grid{grid-template-columns:repeat(2,1fr);}}
+  .stat-card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;}
+  .stat-num{font-family:var(--font-mono);font-size:27px;font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums;}
+  .stat-label{font-size:12px;color:var(--ink-dim);margin-top:4px;line-height:1.4;}
+  .sched-table{width:100%;border-collapse:collapse;margin-top:16px;font-size:14px;}
+  .sched-table td{padding:13px 10px;border-bottom:1px solid var(--line);vertical-align:top;}
+  .sched-table td.sched-name{font-family:var(--font-display);font-weight:600;color:var(--navy);font-size:15px;white-space:nowrap;}
+  .sched-table td.sched-when{font-family:var(--font-mono);color:var(--teal);font-weight:700;white-space:nowrap;}
+  .sched-table td.sched-note{color:var(--ink-dim);font-size:13px;}
+
   /* ---------- weighting mini table ---------- */
   .wt-table{width:100%;border-collapse:collapse;margin-top:22px;font-size:14px;}
   .wt-table td{padding:10px 4px;border-bottom:1px solid var(--line);}
@@ -189,21 +201,22 @@
     </div>
     <div class="nav-links">
       <a href="#overview">Overview</a>
-      <a href="#framework">Framework</a><a href="#montse">Montse</a><a href="#abiola">Abiola</a><a href="#sarah">Sarah</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#framework">Framework</a><a href="#montse">Montse</a><a href="#sarah">Sarah</a><a href="#kate">Kate</a>
     </div>
   </div>
 </nav>
 
 <header class="hero side">
   <div class="inner">
-    <span class="status-tag"><span class="status-dot"></span> Ahead of the usual schedule &mdash; here's why</span>
+    <span class="status-tag"><span class="status-dot"></span> Three interviews now confirmed with your panel</span>
     <p class="hero-eyebrow">Client Report</p>
     <h1 class="hero-title">Fundraising &amp; Engagement Officer &mdash; <em>candidates to interview</em></h1>
-    <p class="hero-sub">Three candidates I've interviewed and scored stringently against my ten-dimension framework for this role, using each one's CV, cover letter and a full first interview with me. These are my findings. Normally I'd interview everyone in the search before bringing you a finished shortlist of three or four. This time I want to bring these three to you now, while my search continues &mdash; one of them has a second interview with another charity next week, and moving quickly could also help get someone in place in time to support the Big Give campaign.</p>
+    <p class="hero-sub">Three candidates I have put forward and assessed against our ten-dimension framework for this role, drawing on each candidate's CV, cover letter (where submitted) and a full first conversation with me. All three now have confirmed interview times with your panel next week.</p>
     <div class="hero-meta">
       <div>Prepared for <b>Mark Smyth</b>, Fundraising Manager</div>
       <div>Prepared by <b>Raise + Recruit</b></div>
-      <div><b>30 September 2026</b></div>
+      <div><b>7 October 2026</b></div>
     </div>
   </div>
 </header>
@@ -212,9 +225,9 @@
   <div class="inner">
     <p class="sec-eyebrow">Overview</p>
     <h2 class="sec-h">Three candidates worth meeting</h2>
-    <p class="lede"><strong>Montse Encontra</strong> is the strongest candidate assessed on the evidence, but she has a second interview with another charity next week. <strong>Abiola Nazarete</strong> brings the strongest hands-on experience of Beacon of any candidate assessed. <strong>Sarah Mitchell</strong> is a candidate I know well from previous searches, and her CRM-implementation background is the clearest match seen for this role's first deliverable.</p>
+    <p class="lede"><strong>Montse Encontra</strong> is the strongest candidate assessed on the evidence, though she is also progressing a second interview with another charity. <strong>Kate Procter</strong> gave the most detailed, end-to-end account of campaign delivery in this search, and is the only candidate with any direct exposure to Beacon. <strong>Sarah Mitchell</strong> is a candidate I know well from previous searches, and her CRM-implementation background is the clearest match seen for this role's first deliverable. <strong>Abiola Nazarete</strong> has been withdrawn from this process: having since met Kate Procter, I consider her the stronger fit for this role, and her assessment score is notably higher, so Abiola's application is not being taken further at this stage.</p>
     <div class="urgent-box">
-      <p><strong>Suggested next step:</strong> I'd recommend getting interviews with all three in the diary as soon as your schedule allows, given Montse's timeline. I'll keep interviewing and searching for the rest of the shortlist in the meantime.</p>
+      <p><strong>Confirmed interviews:</strong> Montse Encontra on Thursday 8 October at 12:00pm, Kate Procter on Tuesday 13 October at 10:00am, and Sarah Mitchell on Tuesday 13 October at 11:00am, all at the Vassall Centre. I will continue interviewing and searching for the remainder of the shortlist in parallel.</p>
     </div>
     <div class="toc-grid">
 <a class="toc-card tone-green" href="#montse">
@@ -223,23 +236,45 @@
       <div class="toc-role">Marketing & Product Consultant, Nationwide Building Society</div>
       <div class="toc-verdict tone-green">Strongly recommend — move quickly</div>
     </a>
-<a class="toc-card tone-amber" href="#abiola">
-      <div class="toc-score">72.00<span>/100</span></div>
-      <div class="toc-name">Abiola Nazarete</div>
-      <div class="toc-role">Database Intern, BLESMA</div>
-      <div class="toc-verdict tone-amber">Recommend advancing</div>
-    </a>
 <a class="toc-card tone-amber" href="#sarah">
       <div class="toc-score">72.00<span>/100</span></div>
       <div class="toc-name">Sarah Mitchell</div>
       <div class="toc-role">Self-employed Graphic Designer</div>
       <div class="toc-verdict tone-amber">Recommend advancing</div>
     </a>
+<a class="toc-card tone-green" href="#kate">
+      <div class="toc-score">84.20<span>/100</span></div>
+      <div class="toc-name">Kate Procter</div>
+      <div class="toc-role">Individual Giving Assistant, Bath Cats and Dogs Home (RSPCA Bath & District Branch)</div>
+      <div class="toc-verdict tone-green">Strongly recommend — move quickly</div>
+    </a>
     </div>
   </div>
 </section>
 
-<section class="pg alt side" id="framework">
+<section class="pg alt side" id="pipeline">
+  <div class="inner">
+    <p class="sec-eyebrow">Search Activity</p>
+    <h2 class="sec-h">Pipeline to date</h2>
+    <p class="lede">An overview of search activity so far, and the confirmed interview schedule for your panel next week.</p>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">204</div><div class="stat-label">Candidates in the pool</div></div>
+      <div class="stat-card"><div class="stat-num">18</div><div class="stat-label">Discovery calls held</div></div>
+      <div class="stat-card"><div class="stat-num">7</div><div class="stat-label">First interviews completed</div></div>
+      <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">Best suited to date</div></div>
+    </div>
+    <h3 class="block-h" style="margin-top:34px;">Confirmed interview schedule</h3>
+    <table class="sched-table">
+      <tbody>
+        <tr><td class="sched-name">Montse Encontra</td><td class="sched-when">Thursday 8 October, 12:00pm</td><td class="sched-note">The Vassall Centre, Gill Avenue, Fishponds, Bristol BS16 2QQ</td></tr>
+        <tr><td class="sched-name">Kate Procter</td><td class="sched-when">Tuesday 13 October, 10:00am</td><td class="sched-note">The Vassall Centre, Gill Avenue, Fishponds, Bristol BS16 2QQ</td></tr>
+        <tr><td class="sched-name">Sarah Mitchell</td><td class="sched-when">Tuesday 13 October, 11:00am</td><td class="sched-note">The Vassall Centre, Gill Avenue, Fishponds, Bristol BS16 2QQ</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="pg side" id="framework">
   <div class="inner">
     <p class="sec-eyebrow">Methodology</p>
     <h2 class="sec-h">How I scored each candidate</h2>
@@ -395,139 +430,6 @@
   </div>
 </section>
 
-<section class="candidate side" id="abiola">
-  <div class="inner">
-    <div class="cand-head">
-      <div class="cand-score tone-amber">
-        <div class="cand-score-num">72.00</div>
-        <div class="cand-score-den">/ 100</div>
-      </div>
-      <div class="cand-head-text">
-        <p class="cand-eyebrow">Candidate</p>
-        <h2 class="cand-name">Abiola Nazarete</h2>
-        <p class="cand-role">Database Intern, BLESMA &middot; Oct 2025 – present</p>
-        <span class="verdict-chip tone-amber">Recommend advancing</span>
-      </div>
-    </div>
-    
-
-    <h3 class="block-h">Current situation &amp; motivation</h3>
-    <p class="body-p">Abiola is currently a Database Intern at BLESMA, where she has been closely involved in migrating the charity onto Beacon, building structure and modules for different teams from scratch. Before that she spent ten years at Masonic Charitable Foundation in donations and Gift Aid administration, and she holds an ongoing, long-running part-time role at Young Epilepsy supporting safeguarding processes for vulnerable young people, alongside 2026 CPD certifications in Safeguarding and Suicide Prevention. She's motivated by the sector's work with vulnerable people specifically, and has a stated long-term ambition to run her own charity supporting children and women. Her interview was conversational and covered her practical, day-to-day CRM and donor-data experience in detail.</p>
-
-    <h3 class="block-h">Scoring summary</h3>
-    <div class="table-wrap">
-    <table class="score-table">
-      <thead><tr><th>Dimension</th><th>Weight</th><th>Score</th><th>Rating</th><th>Weighted</th></tr></thead>
-      <tbody>
-      <tr>
-          <td class="dim-name">CRM Implementation & Data Ownership</td>
-          <td class="num">20%</td>
-          <td class="num">8.5/10</td>
-          <td><span class="rag rag-green">Green</span></td>
-          <td class="num weighted">17.00</td>
-        </tr>
-<tr>
-          <td class="dim-name">Campaign & Appeal Delivery</td>
-          <td class="num">15%</td>
-          <td class="num">6.5/10</td>
-          <td><span class="rag rag-amber">Amber</span></td>
-          <td class="num weighted">9.75</td>
-        </tr>
-<tr>
-          <td class="dim-name">Individual & Regular Giving / Supporter Journeys</td>
-          <td class="num">15%</td>
-          <td class="num">7.5/10</td>
-          <td><span class="rag rag-amber">Amber</span></td>
-          <td class="num weighted">11.25</td>
-        </tr>
-<tr>
-          <td class="dim-name">Digital Fundraising & Multichannel Marketing</td>
-          <td class="num">10%</td>
-          <td class="num">5.5/10</td>
-          <td><span class="rag rag-amber">Amber</span></td>
-          <td class="num weighted">5.50</td>
-        </tr>
-<tr>
-          <td class="dim-name">Autonomy & Solo Delivery</td>
-          <td class="num">10%</td>
-          <td class="num">8/10</td>
-          <td><span class="rag rag-green">Green</span></td>
-          <td class="num weighted">8.00</td>
-        </tr>
-<tr>
-          <td class="dim-name">Stewardship & Supporter Relationship Building</td>
-          <td class="num">8%</td>
-          <td class="num">7/10</td>
-          <td><span class="rag rag-amber">Amber</span></td>
-          <td class="num weighted">5.60</td>
-        </tr>
-<tr>
-          <td class="dim-name">Case Studies & Storytelling with Vulnerable Contacts</td>
-          <td class="num">8%</td>
-          <td class="num">6/10</td>
-          <td><span class="rag rag-amber">Amber</span></td>
-          <td class="num weighted">4.80</td>
-        </tr>
-<tr>
-          <td class="dim-name">Analysis & Reporting</td>
-          <td class="num">6%</td>
-          <td class="num">7/10</td>
-          <td><span class="rag rag-amber">Amber</span></td>
-          <td class="num weighted">4.20</td>
-        </tr>
-<tr>
-          <td class="dim-name">Values, Safeguarding & Cause Fit</td>
-          <td class="num">5%</td>
-          <td class="num">8.5/10</td>
-          <td><span class="rag rag-green">Green</span></td>
-          <td class="num weighted">4.25</td>
-        </tr>
-<tr>
-          <td class="dim-name">Practical & Logistical Fit</td>
-          <td class="num">3%</td>
-          <td class="num">5.5/10</td>
-          <td><span class="rag rag-amber">Amber</span></td>
-          <td class="num weighted">1.65</td>
-        </tr>
-      </tbody>
-      <tfoot><tr><td colspan="4">Total weighted score</td><td class="num total">72.00 / 100</td></tr></tfoot>
-    </table>
-    </div>
-
-    <p class="body-p summary-p">Abiola's standout strength is CRM implementation — the strongest evidence seen in this search — alongside the deepest safeguarding and vulnerable-people background of any candidate assessed, and a concrete example of delivering solo under pressure. Four dimensions sit at amber for a consistent reason: campaign strategy, content-writing, digital channels and case-study storytelling have, in her account, typically been a colleague's responsibility, with her own role concentrated on the system and implementation side — worth testing directly at the next stage.</p>
-
-    <div class="flags-grid">
-      <div class="flags-col">
-        <h4 class="flags-h stands-out">What stands out</h4>
-        <ul class="flags-list good"><li>The strongest hands-on CRM-implementation evidence assessed in this search — she was part of BLESMA's full migration onto Beacon from an older, less secure system.</li>
-<li>A genuine, concrete example of solo delivery under pressure: covering for an absent colleague, she independently delivered a full Christmas direct-marketing appeal alongside several other CRM functions.</li>
-<li>The deepest safeguarding and vulnerable-young-people background of any candidate assessed — ongoing coordination work with local authorities, social care, police and health services, backed by current CPD certifications.</li>
-<li>A genuine, long-standing personal connection to the cause: her own long-term ambition is to run a charity supporting children and women, and she already sits on her church's fundraising committee in her own time.</li>
-<li>A consistent, credible regular-giving and stewardship track record across two organisations, including hands-on Direct Debit stewardship from start to finish.</li></ul>
-      </div>
-      <div class="flags-col">
-        <h4 class="flags-h explore">Worth exploring further</h4>
-        <ul class="flags-list watch"><li>Campaign strategy and content-writing have, in her own account, typically sat with a colleague rather than with her — worth testing this directly rather than assuming either way.</li>
-<li>No evidence yet of social, SMS or paid-digital channel work — her experience so far is concentrated in direct mail, print and email.</li>
-<li>Her charity career to date has been London-based, and her current location wasn't confirmed in interview — worth checking this fits the hybrid pattern and occasional in-person days in Bristol.</li>
-<li>Recommend structuring the next interview to lead with the role and the opportunity early on — a number of her questions in our conversation focused heavily on hours and pay, which is worth being ready for.</li></ul>
-      </div>
-    </div>
-
-    <hr class="doc-divider">
-    <h3 class="block-h">Full CV</h3>
-    <article class="cv-card" id="cv-abiola">
-      <h4 class="cv-sub">Summary</h4><p class="cv-body">Experienced database and fundraising operations professional with strong knowledge of CRM systems, donor data management, Gift Aid processes, reconciliations, reporting, and data quality. Skilled in Oracle, FlexiCapture, Beacon, Raiser's Edge NXT, Dataro, Rosterfy, ERP systems, Sage, Microsoft Office and AI tools. Confident analysing data, improving processes and supporting CRM implementation and data process improvements across an organisation.</p><h4 class="cv-sub">Education and qualifications</h4><ul class="cv-list"><li>Safeguarding Level 2 (CPD certified), 2026</li><li>Suicide Prevention (CPD certified), 2026</li><li>MBA Essentials, London School of Economics</li><li>Bachelor's degree in Arts (Economics & Mathematics), Delhi University, India</li></ul><h4 class="cv-sub">Database Intern, BLESMA, London — Oct 2025 – present</h4><ul class="cv-list"><li>Daily and monthly reconciliations, monthly membership reports, Direct Marketing updates.</li><li>Stewardship of regular giving and Direct Marketing alongside the IG Manager; donor data management.</li><li>Interrogates individual-giving data to ensure income opportunities are captured across income streams.</li><li>Works with finance on Gift Aid declarations; liaises with payment providers across multiple platforms.</li><li>Achievements in the last 6 months: completed March Warm Appeal data segmentation; built a strong relationship with the donation-processing supplier; ran Direct Debit stewardship from start to stop; while covering an absent IG & legacy officer, independently delivered a DM Warm Christmas Appeal plus NXT unsubscribes, e-bulletins, magazine-distribution segmentation and data suppression/cleansing.</li></ul><h4 class="cv-sub">Donations Officer, Masonic Charitable Foundation, London — Nov 2016 – Sep 2025</h4><ul class="cv-list"><li>Managed donations for 5,000+ clients under HMRC Gift Aid and ICO data-protection rules.</li><li>Resolved supporter queries, maintained donor records and Gift Aid declarations, and fulfilled acknowledgements.</li><li>Maintained World Pay PCI-DSS compliance; provided cover across several donations-team roles and trained a Donations Administrator.</li></ul><h4 class="cv-sub">Relief Chest Administrator, Masonic Charitable Foundation, London — Sep 2015 – Oct 2016</h4><p class="cv-body">Processed Gift Aid envelope donations and sponsorships, with accurate tax-relief claims and records archiving under the Data Protection Act.</p><h4 class="cv-sub">Coordinator (part time), Young Epilepsy, NCYPE Surrey — Dec 2014 – present</h4><ul class="cv-list"><li>Supports the student development team's educational, social and developmental curriculum.</li><li>Reviews safeguarding-concern risk assessments and protection plans; liaises with local authorities, social care, police and health services.</li><li>Maintains secure incident documentation and runs quality-assurance audits.</li></ul><h4 class="cv-sub">Executive Assistant, Grant Thornton LLP, India/UK — July 2011 – Jan 2014</h4><p class="cv-body">Supported the Government & Infrastructure Advisory team, including statistics and reports for the World Bank, ADB and UNDP.</p>
-    </article>
-
-    <h3 class="block-h">Cover letter</h3>
-    <article class="cover-card" id="cover-abiola">
-      <p>I am applying for the part-time Fundraising &amp; Engagement Officer role. I have extensive charity-sector experience in individual giving, supporter care, CRM management and donor data, supporting regular giving stewardship, fundraising appeals, data segmentation, reporting, Gift Aid, reconciliations and supporter communications using Raiser's Edge NXT and other platforms.</p><p>My previous donations roles involved managing high volumes of donor records, resolving supporter queries and ensuring compliance with HMRC and data protection requirements. I also bring experience supporting young people, making me particularly motivated by your client's work. I would welcome the opportunity to help implement the new CRM, develop supporter journeys and strengthen future fundraising campaigns.</p>
-      <p class="cover-sign">Yours sincerely,<br>Abiola Nazarete</p>
-    </article>
-  </div>
-</section>
-
 <section class="candidate side" id="sarah">
   <div class="inner">
     <div class="cand-head">
@@ -657,11 +559,140 @@
   </div>
 </section>
 
+<section class="candidate side" id="kate">
+  <div class="inner">
+    <div class="cand-head">
+      <div class="cand-score tone-green">
+        <div class="cand-score-num">84.20</div>
+        <div class="cand-score-den">/ 100</div>
+      </div>
+      <div class="cand-head-text">
+        <p class="cand-eyebrow">Candidate</p>
+        <h2 class="cand-name">Kate Procter</h2>
+        <p class="cand-role">Individual Giving Assistant, Bath Cats and Dogs Home (RSPCA Bath & District Branch) &middot; Jan 2026 – present</p>
+        <span class="verdict-chip tone-green">Strongly recommend — move quickly</span>
+      </div>
+    </div>
+    
+
+    <h3 class="block-h">Current situation &amp; motivation</h3>
+    <p class="body-p">Kate is currently an Individual Giving Assistant at Bath Cats and Dogs Home, ten months into the role, having moved from Communications and Marketing Officer at Thrive (The Society for Horticultural Therapy) in January. She owns individual giving almost entirely alongside her manager &mdash; appeals, regular giving, lottery, legacy and in-memory &mdash; plus the stewardship communications and day-to-day CRM work that would sit with a dedicated data or comms role at a larger charity. She was open that the move to Bath was primarily a relocation, and that she never expected to stay much beyond a year &mdash; she's already conscious of having outgrown the scope of the role and is looking for something more senior. She's currently on &pound;26k and is comfortable with this role's salary and four-day week, which would leave room for the freelance outdoor-instructor work she does alongside her day job. She's being deliberately selective about applications rather than applying broadly, and has only made one other application so far. I offered her an interview on the strength of this call, and she's booked in with the panel for Tuesday morning.</p>
+
+    <h3 class="block-h">Scoring summary</h3>
+    <div class="table-wrap">
+    <table class="score-table">
+      <thead><tr><th>Dimension</th><th>Weight</th><th>Score</th><th>Rating</th><th>Weighted</th></tr></thead>
+      <tbody>
+      <tr>
+          <td class="dim-name">CRM Implementation & Data Ownership</td>
+          <td class="num">20%</td>
+          <td class="num">8/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">16.00</td>
+        </tr>
+<tr>
+          <td class="dim-name">Campaign & Appeal Delivery</td>
+          <td class="num">15%</td>
+          <td class="num">9/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">13.50</td>
+        </tr>
+<tr>
+          <td class="dim-name">Individual & Regular Giving / Supporter Journeys</td>
+          <td class="num">15%</td>
+          <td class="num">9/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">13.50</td>
+        </tr>
+<tr>
+          <td class="dim-name">Digital Fundraising & Multichannel Marketing</td>
+          <td class="num">10%</td>
+          <td class="num">8/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">8.00</td>
+        </tr>
+<tr>
+          <td class="dim-name">Autonomy & Solo Delivery</td>
+          <td class="num">10%</td>
+          <td class="num">9/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">9.00</td>
+        </tr>
+<tr>
+          <td class="dim-name">Stewardship & Supporter Relationship Building</td>
+          <td class="num">8%</td>
+          <td class="num">8.5/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">6.80</td>
+        </tr>
+<tr>
+          <td class="dim-name">Case Studies & Storytelling with Vulnerable Contacts</td>
+          <td class="num">8%</td>
+          <td class="num">8.5/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">6.80</td>
+        </tr>
+<tr>
+          <td class="dim-name">Analysis & Reporting</td>
+          <td class="num">6%</td>
+          <td class="num">7/10</td>
+          <td><span class="rag rag-amber">Amber</span></td>
+          <td class="num weighted">4.20</td>
+        </tr>
+<tr>
+          <td class="dim-name">Values, Safeguarding & Cause Fit</td>
+          <td class="num">5%</td>
+          <td class="num">8/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">4.00</td>
+        </tr>
+<tr>
+          <td class="dim-name">Practical & Logistical Fit</td>
+          <td class="num">3%</td>
+          <td class="num">8/10</td>
+          <td><span class="rag rag-green">Green</span></td>
+          <td class="num weighted">2.40</td>
+        </tr>
+      </tbody>
+      <tfoot><tr><td colspan="4">Total weighted score</td><td class="num total">84.20 / 100</td></tr></tfoot>
+    </table>
+    </div>
+
+    <p class="body-p summary-p">Kate's call is the strongest end-to-end account of hands-on individual-giving delivery assessed in this search, and she's the only candidate so far with direct experience of Beacon &mdash; the exact CRM this role is implementing &mdash; gained operationally at Thrive, where it ran alongside Mailchimp. Her account of a full appeal, from concept and case-study selection through to copywriting, direct mail production, a six-part email journey, paid and organic social, and post-campaign thanking, was detailed and specific throughout, and her Care Club regular-giving launch produced a concrete, quantified result. The one dimension sitting at amber is analysis and reporting &mdash; her evaluation work is real, but came through less concretely than her delivery account, and is worth a direct question or two at the next stage.</p>
+
+    <div class="flags-grid">
+      <div class="flags-col">
+        <h4 class="flags-h stands-out">What stands out</h4>
+        <ul class="flags-list good"><li>The only candidate assessed so far with direct, hands-on experience of Beacon &mdash; the exact CRM this role is implementing &mdash; gained at Thrive, where it ran alongside Mailchimp.</li>
+<li>A genuinely end-to-end campaign story, told unprompted in real detail: concept and case-study selection, copywriting and design, direct mail production, a six-part email journey, organic and paid social, and post-campaign thanking &mdash; more channels, in more depth, than any other candidate has walked through.</li>
+<li>A concrete, quantified regular-giving result: she helped launch Bath Cats and Dogs Home's new &ldquo;Care Club&rdquo; regular-giving programme from proposition through to onboarding communications, generating over 30 new regular givers in its first month.</li>
+<li>Real, demonstrated solo ownership inside a very small team: individual giving sits with just her and her manager, and she absorbed a dedicated fundraising-finance-admin workload on top of her own when that role was lost.</li>
+<li>A journalism background (Diploma with Distinction, Sheffield) and direct experience producing written and video case studies with people living with long-term health conditions and disabilities at Thrive &mdash; genuine, sensitive storytelling with vulnerable contacts, which has been hard to evidence elsewhere in this search.</li></ul>
+      </div>
+      <div class="flags-col">
+        <h4 class="flags-h explore">Worth exploring further</h4>
+        <ul class="flags-list watch"><li>She was open that she never expected to stay at Bath Cats and Dogs Home much beyond a year and is already looking to move up &mdash; worth confirming directly that she sees this as a multi-year role, not another short stop.</li>
+<li>Her reporting and evaluation work &mdash; segmentation, response and engagement tracking &mdash; is real but came through less concretely than her campaign-delivery account; worth asking for one specific example of analysis changing a decision.</li>
+<li>Her case-study and storytelling experience to date has been with vulnerable adults living with health conditions and disabilities, not specifically with carers or young carers &mdash; worth a direct question on how she'd adapt that approach, and whether any safeguarding training would be needed.</li>
+<li>Her CV didn't come through ahead of this call and the conversation ran without it &mdash; nothing to flag about her as a candidate, but worth double-checking the final version has landed before the panel stage.</li></ul>
+      </div>
+    </div>
+
+    <hr class="doc-divider">
+    <h3 class="block-h">Full CV</h3>
+    <article class="cv-card" id="cv-kate">
+      <h4 class="cv-sub">Professional Summary</h4><p class="cv-body">Fundraising and communications professional with experience across individual giving, supporter journeys, CRM and multi-channel fundraising campaigns. Currently working within an individual giving team, with hands-on experience across appeals, regular giving, lottery, legacy and in-memory fundraising, as well as supporter care and stewardship. Confident using Raiser's Edge NXT to manage supporter data, process income and Gift Aid, support audience segmentation and maintain accurate CRM records. Experienced in developing fundraising activity from planning and audience targeting through to delivery, evaluation and ongoing supporter engagement. Strong communications background, with particular experience creating email, web, print and digital content, developing sensitive case studies and turning real experiences into compelling fundraising stories.</p><h4 class="cv-sub">Key skills</h4><ul class="cv-list"><li>Individual Giving: Appeals, Regular Giving, Supporter Stewardship, Donor Communications, In-memory & Legacy Fundraising</li><li>CRM & Data: Raiser's Edge NXT, Omatic, Supporter Segmentation, Reporting, Data Management, Gift Aid, GDPR</li><li>Fundraising Platforms: Fundraise Up, JustGiving, Enthuse</li><li>Digital & Communications: Email Marketing, Supporter Journeys, Web Content, Paid Social, Direct Mail, Case Studies, Copywriting</li><li>Campaigns & Evaluation: Multi-channel Campaigns, Audience Targeting, Campaign Reporting, Performance Analysis, Donor Acquisition & Retention</li><li>Creative: Canva, Adobe Creative Suite, Photography & Video Content</li></ul><h4 class="cv-sub">Individual Giving Assistant, Bath Cats and Dogs Home (RSPCA Bath & District Branch) — January 2026 – present</h4><ul class="cv-list"><li>Supports the delivery and growth of the charity's individual giving programme across appeals, regular giving, lottery, legacy and in-memory fundraising, working across the supporter lifecycle from acquisition through to stewardship and retention.</li><li>Uses Raiser's Edge NXT to manage supporter records, process donations and income, maintain accurate data and support reporting, Gift Aid and fundraising administration across multiple platforms.</li><li>Develops and coordinates supporter journeys across fundraising products, including acquisition, welcome, thank-you, impact and stewardship communications.</li><li>Helped develop and launch Care Club, a new regular giving programme — proposition development, donor acquisition, email and paid social activity, welcome and stewardship communications, and retention planning. Early launch activity generated over 30 new regular givers in the first month.</li><li>Delivers integrated fundraising campaigns across email, web, direct mail, paid social and organic social, contributing to planning, audience targeting, content development, delivery and evaluation.</li><li>Delivered the Teenage Tails Spring Appeal, developing a six-part email journey alongside landing page content, direct mail, paid social and organic social activity. Produced campaign materials in-house, saving more than £1,000 in freelance production costs.</li><li>Monitors and evaluates fundraising performance — income, average gift, response and engagement — to identify opportunities to improve future campaigns, journeys and acquisition activity.</li><li>Produces fundraising communications using case studies, sourcing stories, photography and campaign content collaboratively.</li><li>Provides supporter care via email, telephone and post, resolving queries and building long-term relationships with donors.</li></ul><h4 class="cv-sub">Communications and Marketing Officer, Thrive (The Society for Horticultural Therapy) — December 2023 – December 2025</h4><ul class="cv-list"><li>Planned and delivered multi-channel communications campaigns across email, web, social media and print.</li><li>Supported the Winter Appeal and Big Give Christmas Challenge, developing service-user case studies and campaign content.</li><li>Produced written and video case studies featuring people living with long-term health conditions and disabilities, working directly with service users to share authentic stories sensitively and accurately.</li><li>Managed email marketing using Mailchimp, creating content and monitoring performance.</li><li>Produced annual impact reports and marketing materials across print and digital channels using Adobe Creative Suite and Canva.</li><li>Monitored campaign performance through analytics and reporting.</li><li>Managed media enquiries and drafted press releases.</li></ul><h4 class="cv-sub">Education</h4><ul class="cv-list"><li>Diploma of Higher Education with Distinction in Journalism, University of Sheffield — September 2018 – June 2023</li><li>A Level: Biology A*, Geography A*, Classical Civilisation A, Chemistry B</li><li>GCSE: 13 A*s including English Language and Maths</li></ul>
+    </article>
+
+    <h3 class="block-h">Cover letter</h3><p class="body-p muted">No cover letter was submitted for this role.</p>
+  </div>
+</section>
+
 <section class="pg alt side">
   <div class="inner">
     <div class="signoff-box">
       <h3>Next steps</h3>
-      <p>Sending this over ahead of our Zoom call tomorrow, so there's time to discuss it with Jacqui beforehand if useful. Happy to arrange interviews with any or all of these three at short notice, and to talk through the framework or any of these findings in more detail on the call. I'll keep you posted as the rest of the search continues.</p>
+      <p>All three interviews are confirmed in your panel's diary for next week. Please do let me know if you would like to discuss the framework or any of these findings in more detail beforehand. I will keep you updated as the remainder of the search continues.</p>
     </div>
   </div>
 </section>
